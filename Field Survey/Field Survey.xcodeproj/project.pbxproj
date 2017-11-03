@@ -11,6 +11,7 @@
 		6125FE321FAD079000B60BF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6125FE301FAD079000B60BF2 /* Main.storyboard */; };
 		6125FE341FAD079000B60BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6125FE331FAD079000B60BF2 /* Assets.xcassets */; };
 		6125FE371FAD079000B60BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6125FE351FAD079000B60BF2 /* LaunchScreen.storyboard */; };
+		6158D7561FAD094B00959DD9 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 6158D7551FAD094B00959DD9 /* field_observations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6125FE331FAD079000B60BF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6125FE361FAD079000B60BF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6125FE381FAD079000B60BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6158D7551FAD094B00959DD9 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		6125FE2B1FAD078F00B60BF2 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				6158D7551FAD094B00959DD9 /* field_observations.json */,
 				6125FE2C1FAD079000B60BF2 /* AppDelegate.swift */,
 				6125FE301FAD079000B60BF2 /* Main.storyboard */,
 				6125FE331FAD079000B60BF2 /* Assets.xcassets */,
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6125FE371FAD079000B60BF2 /* LaunchScreen.storyboard in Resources */,
+				6158D7561FAD094B00959DD9 /* field_observations.json in Resources */,
 				6125FE341FAD079000B60BF2 /* Assets.xcassets in Resources */,
 				6125FE321FAD079000B60BF2 /* Main.storyboard in Resources */,
 			);
