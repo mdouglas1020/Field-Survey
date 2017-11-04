@@ -12,6 +12,13 @@
 		6125FE341FAD079000B60BF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6125FE331FAD079000B60BF2 /* Assets.xcassets */; };
 		6125FE371FAD079000B60BF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6125FE351FAD079000B60BF2 /* LaunchScreen.storyboard */; };
 		6158D7561FAD094B00959DD9 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 6158D7551FAD094B00959DD9 /* field_observations.json */; };
+		6158D7591FAD0FEF00959DD9 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D7581FAD0FEF00959DD9 /* Classification.swift */; };
+		6158D75B1FAD11C400959DD9 /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D75A1FAD11C400959DD9 /* FieldSurvey.swift */; };
+		6158D75D1FAD14A000959DD9 /* FieldSurveyJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D75C1FAD14A000959DD9 /* FieldSurveyJSONParser.swift */; };
+		6158D75F1FAD1B8700959DD9 /* FieldSurveyJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D75E1FAD1B8700959DD9 /* FieldSurveyJSONLoader.swift */; };
+		6158D7611FAD1FBF00959DD9 /* ObservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D7601FAD1FBF00959DD9 /* ObservationsViewController.swift */; };
+		6158D7631FAD202900959DD9 /* ObservationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D7621FAD202900959DD9 /* ObservationsDetailViewController.swift */; };
+		6158D7651FAD2E5E00959DD9 /* FieldSurveyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158D7641FAD2E5E00959DD9 /* FieldSurveyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		6125FE361FAD079000B60BF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6125FE381FAD079000B60BF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6158D7551FAD094B00959DD9 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		6158D7581FAD0FEF00959DD9 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		6158D75A1FAD11C400959DD9 /* FieldSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		6158D75C1FAD14A000959DD9 /* FieldSurveyJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONParser.swift; sourceTree = "<group>"; };
+		6158D75E1FAD1B8700959DD9 /* FieldSurveyJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONLoader.swift; sourceTree = "<group>"; };
+		6158D7601FAD1FBF00959DD9 /* ObservationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsViewController.swift; sourceTree = "<group>"; };
+		6158D7621FAD202900959DD9 /* ObservationsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationsDetailViewController.swift; sourceTree = "<group>"; };
+		6158D7641FAD2E5E00959DD9 /* FieldSurveyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldSurveyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		6125FE2B1FAD078F00B60BF2 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
-				6158D7551FAD094B00959DD9 /* field_observations.json */,
+				6158D7571FAD0C9400959DD9 /* Model */,
 				6125FE2C1FAD079000B60BF2 /* AppDelegate.swift */,
 				6125FE301FAD079000B60BF2 /* Main.storyboard */,
 				6125FE331FAD079000B60BF2 /* Assets.xcassets */,
 				6125FE351FAD079000B60BF2 /* LaunchScreen.storyboard */,
 				6125FE381FAD079000B60BF2 /* Info.plist */,
+				6158D7601FAD1FBF00959DD9 /* ObservationsViewController.swift */,
+				6158D7621FAD202900959DD9 /* ObservationsDetailViewController.swift */,
+				6158D7641FAD2E5E00959DD9 /* FieldSurveyTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		6158D7571FAD0C9400959DD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6158D7551FAD094B00959DD9 /* field_observations.json */,
+				6158D7581FAD0FEF00959DD9 /* Classification.swift */,
+				6158D75A1FAD11C400959DD9 /* FieldSurvey.swift */,
+				6158D75C1FAD14A000959DD9 /* FieldSurveyJSONParser.swift */,
+				6158D75E1FAD1B8700959DD9 /* FieldSurveyJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6125FE2D1FAD079000B60BF2 /* AppDelegate.swift in Sources */,
+				6158D7591FAD0FEF00959DD9 /* Classification.swift in Sources */,
+				6158D75B1FAD11C400959DD9 /* FieldSurvey.swift in Sources */,
+				6158D75F1FAD1B8700959DD9 /* FieldSurveyJSONLoader.swift in Sources */,
+				6158D7611FAD1FBF00959DD9 /* ObservationsViewController.swift in Sources */,
+				6158D75D1FAD14A000959DD9 /* FieldSurveyJSONParser.swift in Sources */,
+				6158D7651FAD2E5E00959DD9 /* FieldSurveyTableViewCell.swift in Sources */,
+				6158D7631FAD202900959DD9 /* ObservationsDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
